@@ -1,13 +1,13 @@
-import FriendListItem from '../FriendListItem/FriendListItem.module.jsx';
+import {FriendListItem} from '../FriendListItem/FriendListItem.module';
 
-export function FriendList(friends) {
+export function FriendList(data) {
   return (
     <ul className="friend-list">
-      {friends.map(friend => (
-        <li key={friend.id}>
+      {data.friends.map(friend => 
+        {return <li key={friend.id}>
           <FriendListItem friend={friend} />
-        </li>
-      ))}
+        </li>}
+      )}
     </ul>
   );
 }
