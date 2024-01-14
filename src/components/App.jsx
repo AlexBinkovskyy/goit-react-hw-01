@@ -5,7 +5,7 @@ import friends from '../refs/friends.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory.module';
 import transactions from '../refs/transactions.json'
 
-function App() {
+export function App() {
   return (
     <div>
       <ProfileModule userData={userData} />
@@ -15,4 +15,3 @@ function App() {
   );
 }
 
-export default App;
