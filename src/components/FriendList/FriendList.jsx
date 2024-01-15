@@ -1,4 +1,4 @@
-import {FriendListItem} from '../FriendListItem/FriendListItem.module';
+import {FriendListItem} from '../FriendListItem/FriendListItem';
 
 export function FriendList(data) {
   return (

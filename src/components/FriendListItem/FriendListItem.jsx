@@ -1,4 +1,4 @@
-import "./FriendListItem.css"
+import "./FriendListItem.module.css"
 import clsx from "clsx"
 
 export function FriendListItem(data) {
