@@ -1,6 +1,8 @@
+import css from "./Transaction.module.css"
+
 export function TransactionHistory({ items }) {
   return (
-    <table className="transaction-history">
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -12,7 +14,7 @@ export function TransactionHistory({ items }) {
         {items.map(({ amount, currency, id, type }) => {
           return (
             <tr key={id}>
-              <td>{type}</td>
+              <td>{changeCase(type)}</td>
               <td>{amount}</td>
               <td>{currency}</td>
             </tr>
@@ -21,4 +23,8 @@ export function TransactionHistory({ items }) {
       </tbody>
     </table>
   );
+}
+
+function changeCase(type) {
+  return type.charAt(0).toUpperCase() + type.slice(1);
 }

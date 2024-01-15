@@ -7,7 +7,7 @@ import transactions from '../refs/transactions.json'
 
 export function App() {
   return (
-    <div>
+    <div className='rootMain'>
       <ProfileModule userData={userData} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions}/>
