@@ -16,7 +16,7 @@ export function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList avatar={friends.avatar} name={friends.name} isOnline={friends.isOnline} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
   );
